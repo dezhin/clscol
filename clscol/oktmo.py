@@ -28,7 +28,7 @@ class OktmoClassifier(Classifier):
             __tablename__ = 'oktmo%s' % version_key
 
             id = Column(Unicode(8), primary_key=True)
-            name = Column(Unicode(200), nullable=False)
+            name = Column(Unicode(255), nullable=False)
 
         class OktmoSettlement(Base):
             __tablename__ = 'oktmo%s_settlement' % version_key

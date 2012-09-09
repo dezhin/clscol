@@ -27,7 +27,7 @@ class OkatoClassifier(Classifier):
             __tablename__ = 'okato%s' % version_key
 
             id = Column(Unicode(11), primary_key=True)
-            name = Column(Unicode(200), nullable=False)
+            name = Column(Unicode(255), nullable=False)
 
         return (Base.metadata, OkatoTables(okato=Okato))
 
